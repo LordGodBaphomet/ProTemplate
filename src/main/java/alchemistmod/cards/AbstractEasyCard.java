@@ -32,12 +32,19 @@ public abstract class AbstractEasyCard extends CustomCard {
     public boolean upgradedSecondMagic;
     public boolean isSecondMagicModified;
 
+    public int thirdMagic;
+    public int baseThirdMagic;
+    public boolean upgradedThirdMagic;
+    public boolean isThirdMagicModified;
+
     public int secondDamage;
     public int baseSecondDamage;
     public boolean upgradedSecondDamage;
     public boolean isSecondDamageModified;
 
     private boolean needsArtRefresh = false;
+
+    public int consumePriority = 0;
 
     public AbstractEasyCard(final String cardID, final int cost, final CardType type, final CardRarity rarity, final CardTarget target) {
         this(cardID, cost, type, rarity, target, CharacterFile.Enums.ALCHEMIST_COLOR);
@@ -132,6 +139,8 @@ public abstract class AbstractEasyCard extends CustomCard {
         super.resetAttributes();
         secondMagic = baseSecondMagic;
         isSecondMagicModified = false;
+        thirdMagic = baseThirdMagic;
+        isThirdMagicModified = false;
         secondDamage = baseSecondDamage;
         isSecondDamageModified = false;
     }
@@ -141,6 +150,10 @@ public abstract class AbstractEasyCard extends CustomCard {
         if (upgradedSecondMagic) {
             secondMagic = baseSecondMagic;
             isSecondMagicModified = true;
+        }
+        if (upgradedThirdMagic) {
+            thirdMagic = baseThirdMagic;
+            isThirdMagicModified = true;
         }
         if (upgradedSecondDamage) {
             secondDamage = baseSecondDamage;
@@ -152,6 +165,12 @@ public abstract class AbstractEasyCard extends CustomCard {
         baseSecondMagic += amount;
         secondMagic = baseSecondMagic;
         upgradedSecondMagic = true;
+    }
+
+    protected void upgradeThirdMagic(int amount) {
+        baseThirdMagic += amount;
+        thirdMagic = baseThirdMagic;
+        upgradedThirdMagic = true;
     }
 
     protected void upgradeSecondDamage(int amount) {
@@ -189,6 +208,7 @@ public abstract class AbstractEasyCard extends CustomCard {
             AbstractEasyCard c = (AbstractEasyCard) result;
             c.baseSecondDamage = c.secondDamage = baseSecondDamage;
             c.baseSecondMagic = c.secondMagic = baseSecondMagic;
+            c.baseThirdMagic = c.thirdMagic = baseThirdMagic;
         }
         return result;
     }
