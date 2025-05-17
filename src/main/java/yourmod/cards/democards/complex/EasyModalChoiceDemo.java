@@ -6,7 +6,7 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.StrengthPower;
 import yourmod.actions.EasyModalChoiceAction;
-import yourmod.cards.AbstractEasyCard;
+import yourmod.cards.AbstractReptoCard;
 import yourmod.cards.EasyModalChoiceCard;
 
 import java.util.ArrayList;
@@ -14,7 +14,7 @@ import java.util.ArrayList;
 import static yourmod.ModFile.makeID;
 import static yourmod.util.Wiz.*;
 
-public class EasyModalChoiceDemo extends AbstractEasyCard {
+public class EasyModalChoiceDemo extends AbstractReptoCard {
     public final static String ID = makeID(EasyModalChoiceDemo.class.getSimpleName());
     // intellij stuff skill, self, uncommon, , , , , , 
 

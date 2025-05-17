@@ -11,7 +11,7 @@
 "import static yourmod.ModFile.makeID;",
 "import static yourmod.util.Wiz.*;",
 "",
-"public class $TM_FILENAME_BASE extends AbstractEasyCard {",
+"public class $TM_FILENAME_BASE extends AbstractReptoCard {",
 "    public final static String ID = makeID(\"$TM_FILENAME_BASE\");",
 "",
 "    public $TM_FILENAME_BASE() {",

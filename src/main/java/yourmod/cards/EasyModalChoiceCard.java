@@ -8,7 +8,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import static yourmod.ModFile.makeID;
 
 @AutoAdd.Ignore
-public class EasyModalChoiceCard extends AbstractEasyCard {
+public class EasyModalChoiceCard extends AbstractReptoCard {
 
     private Runnable onUseOrChosen;
     private String passedName;

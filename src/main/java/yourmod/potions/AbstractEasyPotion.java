@@ -8,11 +8,11 @@ import com.megacrit.cardcrawl.helpers.PowerTip;
 import com.megacrit.cardcrawl.localization.PotionStrings;
 import com.megacrit.cardcrawl.potions.AbstractPotion;
 
-public abstract class AbstractEasyPotion extends CustomPotion {
+public abstract class AbstractReptoPotion extends CustomPotion {
     public AbstractPlayer.PlayerClass pool;
     protected PotionStrings strings;
 
-    public AbstractEasyPotion(String id, PotionRarity rarity, PotionSize size, Color liquidColor, Color hybridColor, Color spotsColor) {
+    public AbstractReptoPotion(String id, PotionRarity rarity, PotionSize size, Color liquidColor, Color hybridColor, Color spotsColor) {
         super("", id, rarity, size, PotionColor.WHITE);
         this.liquidColor = liquidColor;
         this.hybridColor = hybridColor;
@@ -20,7 +20,7 @@ public abstract class AbstractEasyPotion extends CustomPotion {
         initializeData();
     }
 
-    public AbstractEasyPotion(String id, PotionRarity rarity, PotionSize size, Color liquidColor, Color hybridColor, Color spotsColor, AbstractPlayer.PlayerClass pool, Color labOutlineColor) {
+    public AbstractReptoPotion(String id, PotionRarity rarity, PotionSize size, Color liquidColor, Color hybridColor, Color spotsColor, AbstractPlayer.PlayerClass pool, Color labOutlineColor) {
         this(id, rarity, size, liquidColor, hybridColor, spotsColor);
         this.labOutlineColor = labOutlineColor;
         this.pool = pool;

@@ -11,7 +11,7 @@ import com.megacrit.cardcrawl.powers.StrengthPower;
 import static yourmod.ModFile.makeID;
 import static yourmod.util.Wiz.*;
 
-public class DemoPotion extends AbstractEasyPotion {
+public class DemoPotion extends AbstractReptoPotion {
     public static String ID = makeID("DemoPotion");
 
     public DemoPotion() {

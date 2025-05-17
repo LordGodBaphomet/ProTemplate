@@ -4,11 +4,11 @@ import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.VulnerablePower;
-import yourmod.cards.AbstractEasyCard;
+import yourmod.cards.AbstractReptoCard;
 
 import static yourmod.ModFile.makeID;
 
-public class TwoTypesOfDamage extends AbstractEasyCard {
+public class TwoTypesOfDamage extends AbstractReptoCard {
     public final static String ID = makeID(TwoTypesOfDamage.class.getSimpleName());
     // intellij stuff skill, self, uncommon, , , , , ,
 

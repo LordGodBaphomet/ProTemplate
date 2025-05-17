@@ -1,7 +1,7 @@
 package yourmod.cards.democards.complex;
 
 import basemod.patches.com.megacrit.cardcrawl.cards.AbstractCard.MultiCardPreview;
-import yourmod.cards.AbstractEasyCard;
+import yourmod.cards.AbstractReptoCard;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -13,7 +13,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import static yourmod.ModFile.makeID;
 import static yourmod.util.Wiz.*;
 
-public class MultiCardPreviewAndDrawCallback extends AbstractEasyCard {
+public class MultiCardPreviewAndDrawCallback extends AbstractReptoCard {
     public final static String ID = makeID(MultiCardPreviewAndDrawCallback.class.getSimpleName());
     // intellij stuff skill, self, uncommon, , , , , ,
 

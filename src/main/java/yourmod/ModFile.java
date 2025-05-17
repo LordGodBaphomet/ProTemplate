@@ -21,9 +21,9 @@ import com.megacrit.cardcrawl.localization.RelicStrings;
 import com.megacrit.cardcrawl.localization.StanceStrings;
 import com.megacrit.cardcrawl.localization.UIStrings;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
-import yourmod.cards.AbstractEasyCard;
+import yourmod.cards.AbstractReptoCard;
 import yourmod.cards.cardvars.AbstractEasyDynamicVariable;
-import yourmod.potions.AbstractEasyPotion;
+import yourmod.potions.AbstractReptoPotion;
 import yourmod.relics.AbstractEasyRelic;
 import yourmod.util.ProAudio;
 import java.nio.charset.StandardCharsets;
@@ -119,8 +119,8 @@ public class ModFile implements
             CHARSELECT_BUTTON, CHARSELECT_PORTRAIT, CharacterFile.Enums.THE_REPTO);
         
         new AutoAdd(modID)
-            .packageFilter(AbstractEasyPotion.class)
-            .any(AbstractEasyPotion.class, (info, potion) -> {
+            .packageFilter(AbstractReptoPotion.class)
+            .any(AbstractReptoPotion.class, (info, potion) -> {
                 if (potion.pool == null)
                     BaseMod.addPotion(potion.getClass(), potion.liquidColor, potion.hybridColor, potion.spotsColor, potion.ID);
                 else
@@ -151,7 +151,7 @@ public class ModFile implements
             .any(DynamicVariable.class, (info, var) -> 
                 BaseMod.addDynamicVariable(var));
         new AutoAdd(modID)
-                .packageFilter(AbstractEasyCard.class)
+                .packageFilter(AbstractReptoCard.class)
                 .setDefaultSeen(true)
                 .cards();
     }

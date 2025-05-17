@@ -1,7 +1,7 @@
 package yourmod.cards.democards.complex;
 
 import yourmod.actions.EasyXCostAction;
-import yourmod.cards.AbstractEasyCard;
+import yourmod.cards.AbstractReptoCard;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
@@ -11,7 +11,7 @@ import static yourmod.ModFile.makeID;
 import static yourmod.util.Wiz.applyToSelfTop;
 import static yourmod.util.Wiz.atb;
 
-public class EasyXCostDemo extends AbstractEasyCard {
+public class EasyXCostDemo extends AbstractReptoCard {
     public final static String ID = makeID(EasyXCostDemo.class.getSimpleName());
     // intellij stuff attack, enemy, rare, , , , , 0, 1
 

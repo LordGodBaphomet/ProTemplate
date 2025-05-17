@@ -6,14 +6,14 @@ import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
-import yourmod.cards.AbstractEasyCard;
+import yourmod.cards.AbstractReptoCard;
 import yourmod.powers.LambdaPower;
 
 import static yourmod.ModFile.makeID;
 import static yourmod.util.Wiz.applyToSelf;
 import static yourmod.util.Wiz.atb;
 
-public class InlinePowerDemo extends AbstractEasyCard {
+public class InlinePowerDemo extends AbstractReptoCard {
     public final static String ID = makeID(InlinePowerDemo.class.getSimpleName());
     // intellij stuff power, self, uncommon
 

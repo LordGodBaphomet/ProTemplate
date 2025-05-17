@@ -4,12 +4,12 @@ import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.cards.tempCards.Shiv;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import yourmod.cards.AbstractEasyCard;
+import yourmod.cards.AbstractReptoCard;
 
 import static yourmod.ModFile.makeID;
 import static yourmod.util.Wiz.*;
 
-public class DrawAndShiv extends AbstractEasyCard {
+public class DrawAndShiv extends AbstractReptoCard {
     public final static String ID = makeID(DrawAndShiv.class.getSimpleName());
     // intellij stuff skill, self, uncommon, , , , , , 
 

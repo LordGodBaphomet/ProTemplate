@@ -3,7 +3,7 @@ package yourmod.cards.democards.complex;
 import basemod.cardmods.EtherealMod;
 import basemod.cardmods.ExhaustMod;
 import basemod.helpers.CardModifierManager;
-import yourmod.cards.AbstractEasyCard;
+import yourmod.cards.AbstractReptoCard;
 import com.evacipated.cardcrawl.mod.stslib.actions.common.SelectCardsAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -16,7 +16,7 @@ import java.util.Collections;
 import static yourmod.ModFile.makeID;
 import static yourmod.util.Wiz.*;
 
-public class SelectCardsPlusCardMods extends AbstractEasyCard {
+public class SelectCardsPlusCardMods extends AbstractReptoCard {
 
     public final static String ID = makeID(SelectCardsPlusCardMods.class.getSimpleName());
     // intellij stuff skill, self, uncommon

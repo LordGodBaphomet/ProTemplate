@@ -1,11 +1,11 @@
 Settings -> Editor -> File and Code Templates and add the following!
 
-import yourmod.cards.AbstractEasyCard;
+import yourmod.cards.AbstractReptoCard;
 
 import static yourmod.ModFile.makeID;
 import static yourmod.util.Wiz.*;
 
-public class ${NAME} extends AbstractEasyCard {
+public class ${NAME} extends AbstractReptoCard {
     public final static String ID = makeID("${NAME}");
     // intellij stuff ${TYPE}, ${TARGET}, ${RARITY}, ${DAMAGE}, ${UPGRADE_DAMAGE}, ${BLOCK}, ${UPGRADE_BLOCK}, ${MAGIC}, ${UPGRADE_MAGIC}
 
